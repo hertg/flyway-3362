@@ -25,7 +25,7 @@
    sbt run
    ```
 
-3. Open the app in the browser: http://localhost:9000/\
+3. Open the app in the browser: http://localhost:9000/.
    The project will be compiled and then throw an exception.
 
 ## Downgrade Flyway version
