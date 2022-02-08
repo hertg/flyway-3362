@@ -1,10 +1,10 @@
 # flyway-3362
-> https://github.com/flyway/flyway/issues/3362
+> [flyway/flyway#3362](https://github.com/flyway/flyway/issues/3362#issuecomment-1032676069)
 
 ## Requirements
-- JDK 8.x or 11.x (not newer!)
-- sbt 1.6.1
-- Docker
+- [JDK 8 or 11](https://aws.amazon.com/corretto) (not newer!)
+- [sbt 1.6.1](https://www.scala-sbt.org/)
+- [Docker](https://docs.docker.com/get-docker/)
 
 ## Reproduce
 
@@ -31,7 +31,7 @@
 ## Downgrade Flyway version
 When downgrading flyway to `8.2.0`, the same setup works again.
 
-1. Edit `build.sbt` and change the `flyway-play` version from `7.19.0` to `7.17.0`
+1. Edit `build.sbt` and change the [flyway-play](https://github.com/flyway/flyway-play) version from `7.19.0` to `7.17.0`
    ```text
    "org.flywaydb" %% "flyway-play" % "7.17.0"
                                       ^^^^^^
