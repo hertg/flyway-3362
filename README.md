@@ -3,7 +3,7 @@
 
 ## Requirements
 - [JDK 8 or 11](https://aws.amazon.com/corretto) (not newer!)
-- [sbt 1.6.1](https://www.scala-sbt.org/)
+- [sbt 1.x](https://www.scala-sbt.org/)
 - [Docker](https://docs.docker.com/get-docker/)
 
 ## Reproduce
