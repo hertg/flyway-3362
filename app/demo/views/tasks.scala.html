@@ -1,0 +1,22 @@
+@import demo.models.Task
+@import views.html.helper.form
+@import views.html.helper.CSRF
+@import demo.models.Task
+@import demo.models.Task
+
+@(tasks: List[Task])(implicit request: Http.Request)
+
+@main("Tasks") {
+  <h1>Tasks</h1>
+  <ul>
+  @for(task: Task <- tasks) {
+    <li>@task.name</li>
+  }
+  </ul>
+
+  @form(action = demo.controllers.routes.TaskController.create()) {
+    @CSRF.formField
+    <input type="text" name="name" placeholder="Name" />
+    <button type="submit">Create</button>
+  }
+}

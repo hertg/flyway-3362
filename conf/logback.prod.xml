@@ -1,0 +1,14 @@
+<configuration>
+
+    <conversionRule conversionWord="coloredLevel" converterClass="play.api.libs.logback.ColoredLevel"/>
+
+    <logger name="play" level="INFO"/>
+    <logger name="application" level="INFO"/>
+    <logger name="io.ebean.SQL" level="OFF"/>
+
+    <root level="WARN">
+        <appender-ref ref="ASYNCSTDOUT"/>
+    </root>
+
+    <shutdownHook class="ch.qos.logback.core.hook.DelayingShutdownHook"/>
+</configuration>

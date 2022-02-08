@@ -1,0 +1,3 @@
+GET     /                           demo.controllers.TaskController.list(request: Request)
+POST    /create                     demo.controllers.TaskController.create(request: Request)
+GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
